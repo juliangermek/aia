@@ -1,0 +1,16 @@
+line = ""
+list_of_lines = []
+i = 1
+characters_per_line = 199
+
+for character in secret:
+  if i <= characters_per_line:
+    line = line + character
+    i += 1
+  else:
+    list_of_lines.append(line)
+    line = ""
+    i = 1
+
+for line in list_of_lines:
+  print(line)
